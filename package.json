@@ -1,0 +1,41 @@
+{
+	"name": "@duncanbeard/pi-tps-meter",
+	"version": "1.0.0",
+	"description": "Pi extension: a live braille graph of output tokens/sec while the model streams, with accurate per-response averages.",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"tps",
+		"tokens-per-second",
+		"throughput"
+	],
+	"type": "module",
+	"license": "MIT",
+	"author": "Duncan Beard",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DuncanBeard/pi-tps-meter.git"
+	},
+	"homepage": "https://github.com/DuncanBeard/pi-tps-meter#readme",
+	"bugs": {
+		"url": "https://github.com/DuncanBeard/pi-tps-meter/issues"
+	},
+	"files": [
+		"extensions/",
+		"README.md",
+		"LICENSE"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"pi": {
+		"extensions": [
+			"./extensions/tps-meter.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-ai": "*",
+		"@earendil-works/pi-coding-agent": "*",
+		"@earendil-works/pi-tui": "*"
+	}
+}
